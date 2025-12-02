@@ -3,9 +3,6 @@
 
 #define START 50
 
-void getLR(FILE *f, int LR[]);
-void getPass(FILE *f, int pass);
-
 int main(int argc, char *argv[]){
 	if(argc == 1){
 		printf("Please specify an input file\n");
@@ -31,10 +28,3 @@ int main(int argc, char *argv[]){
 
 	return 0;
 } 
-
-void getLR(FILE *fp, int LR[]){
-	char c = 0;
-	int d = 0;
-	while(fscanf(fp, "%c%d\n", &c, &d) != EOF)
-		LR[(c == 'L') ? 0 : 1] += d;
-}
