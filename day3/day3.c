@@ -146,18 +146,6 @@ int *convertToI(char *bank, size_t nb_bats){
 	int *bankI = (int*) malloc(nb_bats * sizeof(int));
 	for(int i = 0; i < (int)nb_bats; i++){
 		bankI[i] = (int)bank[i] - 48;
-		//printf("%d", bankI[i]);
 	}
-	//printf("\n");
 	return bankI;
 }
-
-//void sort(int *batteries, size_t nb_bats){
-//	qsort(batteries, nb_bats, sizeof(int), &compar);			
-//}
-//
-//int compar(const void *av, const void *bv){
-//	int a = *(int*)av;
-//	int b = *(int*)bv;
-//	return b-a;
-//}
