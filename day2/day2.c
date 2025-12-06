@@ -1,15 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-
-int get_nb_digits(long n);
-int is_valid_id_p1(long n, int nb_digits);
-int is_valid_id_p2(long n, int nb_digits);
-
-typedef struct{
-	long start;
-	long end;
-} Range;
+#include "day2.h"
 
 int main(int argc, char *argv[]){
 	if(argc == 1){
@@ -64,7 +53,7 @@ int get_nb_digits(long n){
 	return nb;
 }
 
-int is_valid_id_p1(long n, int nb_digits){
+static int is_valid_id_p1(long n, int nb_digits){
 	int fh, sh;
 	int window = nb_digits / 2;
 	fh = n / (pow(10, window));	
@@ -73,7 +62,7 @@ int is_valid_id_p1(long n, int nb_digits){
 	return (fh != sh);
 }
 
-int is_valid_id_p2(long n, int nb_digits){
+static int is_valid_id_p2(long n, int nb_digits){
 	int win_max = nb_digits / 2;
 	int nb_win = 0;
 	int w = 0;
