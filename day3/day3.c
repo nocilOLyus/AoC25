@@ -9,7 +9,6 @@ int main(int argc, char *argv[]){
 
 	char *filename = argv[1];
 
-	// Get the number of ranges
 	FILE *fp = fopen(filename, "r");
 	if(fp == NULL){
 		printf("Error opening file\n");
