@@ -1,6 +1,5 @@
 #include "day4.h"
 #include "funcs.h"
-#include <strings.h>
 
 int visualize = 0;
 
