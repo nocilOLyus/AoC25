@@ -15,6 +15,10 @@ int main(int argc, char **argv){
 
 	char *filename = argv[1];
 	FILE *fp = fopen(filename, "r");
+	if(fp ==  NULL){
+		printf("Error opening file\n");
+		return 1;
+	}
 
 	int rows, cols;
 	char **grid;
