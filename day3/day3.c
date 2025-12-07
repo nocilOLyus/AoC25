@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
 	int nb_banks = getNumberLines(fp);
 	printf("Number of lines: %d\n", nb_banks);
 
-	fp = freopen(filename, "r", fp);
+	rewind(fp);
 
 	// Store banks
 	Bank banks[nb_banks];

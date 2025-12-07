@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 	printf("Number of ranges: %d\n", nb_ranges);
 
 	// Get the ranges
-	fp = freopen(filename, "r", fp);
+	rewind(fp);
 	Range *ranges = (Range *) malloc(nb_ranges * sizeof(Range));
 
 	for(int i = 0; i < nb_ranges; i++)
