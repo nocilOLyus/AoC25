@@ -1,8 +1,5 @@
-#ifndef FUNCS
-#define FUNCS
-
-#include "funcs.h"
 #include "day3.h"
+#include "funcs.h"
 
 int getNumberLines(FILE *fp){
 	int n = 0;
@@ -88,5 +85,3 @@ int *convertToI(char *bank, size_t nb_bats){
 	}
 	return bankI;
 }
-
-#endif

@@ -1,3 +1,6 @@
+#ifndef FUNCS
+#define FUNCS
+
 #include "day3.h"
 
 int getNumberLines(FILE *);
@@ -7,3 +10,5 @@ long int getJoltage(int *batteries, size_t nb_bats, int nb_digits);
 int *convertToI(char *bank, size_t nb_bats);
 void sort(int *batteries, size_t nb_bats);
 int compar(const void *a, const void *b);
+
+#endif

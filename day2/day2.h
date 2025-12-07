@@ -1,3 +1,6 @@
+#ifndef DAY2H
+#define DAY2H
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -10,3 +13,5 @@ typedef struct{
 	long start;
 	long end;
 } Range;
+
+#endif
