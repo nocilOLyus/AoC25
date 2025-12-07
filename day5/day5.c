@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 	int nbRanges = totalRanges - overlaps;
 	free(rawRanges);
 
-	printf("Number of overlaps: %d\n", overlaps);
+	//printf("Number of overlaps: %d\n", overlaps);
 	// Print simplified ranges
 	//printf("New ranges:\n");
 	//for(int i = 0; i < nbRanges; i++)
