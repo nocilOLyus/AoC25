@@ -23,6 +23,7 @@ int main(int argc, char **argv){
 	int rows, cols;
 	char **grid;
 	getGrid(fp, &grid, &rows, &cols);
+	fclose(fp);
 
 	// Print grid geometry and content
 	if(visualize){

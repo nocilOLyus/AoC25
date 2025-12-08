@@ -33,6 +33,7 @@ int main(int argc, char *argv[]){
 	while(fscanf(fp, "%ld\n", &id) != EOF)
 		for(int i = 0; i < nbRanges; i++)
 			fresh += (id >= ranges[i].start && id <= ranges[i].end);
+	fclose(fp);
 	printf("Number of fresh ingredient IDs: %d\n", fresh);
 
 	// Part 2: get the number of IDs the ranges consider to be fresh

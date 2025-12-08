@@ -22,6 +22,7 @@ int main(int argc, char *argv[]){
 
 	for(int i = 0; i < nb_ranges; i++)
 		fscanf(fp, "%ld-%ld,", &(ranges[i].start), &(ranges[i].end));
+	fclose(fp);
 
 	int nb_digits;
 	long part1 = 0, part2 = 0;

@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
 		printf("Error fetching data\n");
 		return 1;
 	}
+	fclose(fp);
 
 	long int part1 = solveProblems(problems, nbProblems);
 
