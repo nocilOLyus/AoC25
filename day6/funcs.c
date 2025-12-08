@@ -64,8 +64,6 @@ int getNbDigits(long n){
 	return nb;
 }
 
-void dummy(){}
-
 int getWorksheetProps(FILE *fp, int *nbProblems, Problem **problems){
 	char *line = NULL, *lastLine = NULL;
 	size_t buffBytes;
@@ -191,7 +189,6 @@ void getCephalopodMath(Problem **problems, int nbProblems){
 	char c, *numStr;
 	numStr = (char*) malloc(sizeof(char));
 
-	dummy();
 	for(int p = 0; p < nbProblems; p++){
 		maxNbDigits = (*problems)[p].maxNbDigits;
 
