@@ -31,5 +31,7 @@ int main(int argc, char *argv[]){
 	printf("Part 1: %ld\n", part1);
 	printf("Part 2: %ld\n", part2);
 
+	free(problems);
+
 	return 0;
 }
