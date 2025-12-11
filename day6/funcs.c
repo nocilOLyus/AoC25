@@ -1,8 +1,7 @@
 #include "funcs.h"
 #include "day6.h"
 
-void reverse(char s[])
- {
+void reverse(char s[]){
      int i, j;
      char c;
 
